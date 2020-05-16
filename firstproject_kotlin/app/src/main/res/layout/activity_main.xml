@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="343dp"
+        android:layout_height="85dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="74dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="40dp"
+        android:text="ClickMe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextName"
+
+        app:layout_goneMarginLeft="20dp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="297dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clickButton"
+
+        ></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
